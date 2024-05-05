@@ -1,6 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
-
+import Typewriter from 'typewriter-effect';
 const textVariants = {
     initial: {
         x: -500,
@@ -38,6 +38,8 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+    const titles = ["Fullstack Developer", "Junior Java Developer"];
+    const titlesString = titles.join("  ");
     return (
         <div className="hero">
             <div className="wrapper">
@@ -49,7 +51,18 @@ const Hero = () => {
                 >
                     <motion.h2 variants={textVariants}>TAHRI MOUSSA</motion.h2>
                     <motion.h1 variants={textVariants}>
-                        Web developer and UI designer
+                        <motion.div variants={textVariants} className="textLoop">
+                            Hi, I am a
+                            <span >
+                                <Typewriter
+                                    options={{
+                                        strings: titles,
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </span>
+                        </motion.div>
                     </motion.h1>
                     <motion.div variants={textVariants} className="buttons">
                         <motion.button variants={textVariants}>
@@ -63,6 +76,7 @@ const Hero = () => {
                         src="/icons8-flèche-bas-50.png"
                         alt=""
                     />
+
                 </motion.div>
             </div>
             <motion.div
@@ -71,7 +85,7 @@ const Hero = () => {
                 initial="initial"
                 animate="animate"
             >
-                Fullstack Developer
+                {titlesString}
             </motion.div>
 
         </div>

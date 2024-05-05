@@ -3,7 +3,7 @@
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
-    background: linear-gradient(180deg, #0c0c1d, #111132);
+    background: linear-gradient(180deg, #110021, #120018);
     position: relative;
 
     .wrapper {
@@ -29,7 +29,7 @@
 
             h2 {
                 font-size: 30px;
-                color: rebeccapurple;
+                color: rgb(114, 0, 227);
                 letter-spacing: 10px;
             }
 
@@ -70,5 +70,29 @@
         color: #ffffff09;
         width: 50%;
         font-weight: bold;
+    }
+
+    .text-loop {
+        font-weight: 600;
+        font-size: 32px;
+        display: flex;
+        gap: 12px;
+        color: white;
+        line-height: 68px;
+
+        // @media (max-width: 960px) {
+        //     text-align: center;
+        // }
+
+        // @media (max-width: 640px) {
+        //     font-size: 22px;
+        //     line-height: 48px;
+        //     margin-bottom: 16px;
+        // }
+    }
+
+    .span {
+        color: white;
+        cursor: pointer;
     }
 }
