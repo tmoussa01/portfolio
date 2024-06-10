@@ -149,7 +149,7 @@ const Skills = () => {
             animate={isInView && "animate"}>
             <div className="skills-wrapper">
                 <div className="title">Skills</div>
-                <div className="desc">Here are some of the skills I've been working on.</div>
+                <div className="desc">Here are some of the skills I&apos;ve been working on.</div>
                 <div className="skills">
                     {skills.map((skill, index) => (
                         <div className="skill" key={index}>
