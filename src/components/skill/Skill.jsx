@@ -31,7 +31,7 @@ const Skills = () => {
                 {
                     name: "Vuejs",
                     image:
-                        "/skills/icons8-vue-js-48.png"
+                        "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
                 },
                 {
                     name: "JavaFx",
@@ -73,7 +73,7 @@ const Skills = () => {
                 },
                 {
                     name: "Spring Boot",
-                    image: "/skills/icons8-logo-de-printemps-48.png",
+                    image: "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg",
                 },
                 {
                     name: "Php",
