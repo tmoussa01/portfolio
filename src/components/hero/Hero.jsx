@@ -38,7 +38,7 @@ const sliderVariants = {
 };
 
 const Hero = () => {
-    const titles = ["Fullstack Developer", "Junior Java Developer"];
+    const titles = ["Fullstack Developer", "Web Developer", "Software Developer"];
     const titlesString = titles.join("  ");
     return (
         <div className="hero">
@@ -51,9 +51,10 @@ const Hero = () => {
                 >
                     <motion.h2 variants={textVariants}>TAHRI MOUSSA</motion.h2>
                     <motion.h1 variants={textVariants}>
-                        <motion.div variants={textVariants} className="textLoop">
-                            Hi, I am a
-                            <span >
+                        <motion.div variants={textVariants} >
+
+                            <div className="textLoop">  <span >
+                                <div className="hi">Hi, I am a</div>
                                 <Typewriter
                                     options={{
                                         strings: titles,
@@ -61,7 +62,8 @@ const Hero = () => {
                                         loop: true,
                                     }}
                                 />
-                            </span>
+                            </span></div>
+
                         </motion.div>
                     </motion.h1>
                     <motion.div variants={textVariants} className="buttons">

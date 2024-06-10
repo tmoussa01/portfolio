@@ -146,14 +146,14 @@ const Skills = () => {
         <motion.div className="skills-container" id="skills" variants={variants}
             initial="initial"
             ref={ref}
-            animate={"animate"}>
+            animate={isInView && "animate"}>
             <div className="skills-wrapper">
                 <div className="title">Skills</div>
                 <div className="desc">Here are some of the skills I've been working on.</div>
                 <div className="skills">
                     {skills.map((skill, index) => (
                         <div className="skill" key={index}>
-                            <h2 className="skill-title">{skill.title}</h2>
+                            <motion.h2 whileHover={{ color: "rgb(105, 63, 174)" }} className="skill-title">{skill.title}</motion.h2>
                             <div className="skill-list">
                                 {skill.skills.map((item, idx) => (
                                     <div className="skill-item" key={idx}>

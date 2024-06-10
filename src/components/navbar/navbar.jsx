@@ -13,14 +13,13 @@ const Navbar = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    Tahri moussa
                 </motion.span>
                 <div className="social">
                     <a href="#">
-                        <img src="/icons8-linkedin-48.png" alt="" />
+                        <img src="https://e7.pngegg.com/pngimages/796/374/png-clipart-linkedin-linkedin.png" alt="" />
                     </a>
                     <a href="#">
-                        <img src="/icons8-github-32.png" alt="" />
+                        <img src="https://banner2.cleanpng.com/20180605/zry/kisspng-fynydd-llc-logo-github-organization-andrew-scott-5b16e57c5a0c08.6997461415282271963688.jpg" alt="" />
                     </a>
 
                 </div>
