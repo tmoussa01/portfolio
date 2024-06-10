@@ -1,6 +1,12 @@
 html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 * {
@@ -18,6 +24,8 @@ a {
 body {
     background-color: #110021;
     color: lightgray;
+    // overflow: hidden;
+
 }
 
 section {
