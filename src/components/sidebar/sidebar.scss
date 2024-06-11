@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: black;
+    color: #ccc;
 
     .bg {
         z-index: 999;
@@ -15,7 +15,10 @@
         left: 0;
         bottom: 0;
         width: 400px;
-        background: white;
+        background: rgba(28, 28, 38, 0.7);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
 
         // @include mobile {
         //     width: 200px;
@@ -33,11 +36,42 @@
 
             a {
                 font-size: 40px;
+                padding: 0.3em;
+                border-radius: 0.8em;
+                transition: 0.3s;
+                animation: neon 1.5s infinite alternate;
+
 
                 // @include mobile {
                 //     font-size: 20px;
                 // }
             }
+
+            a:hover {
+                color: #fff;
+                // border-radius: 0.8em;
+            }
+
+            @keyframes neon {
+                from {
+                    text-shadow:
+                        0 0 5px rgba(114, 0, 227, 0.7),
+                        0 0 10px rgba(114, 0, 227, 0.6),
+                        0 0 15px rgba(114, 0, 227, 0.5),
+                        0 0 20px rgba(114, 0, 227, 0.4),
+                        0 0 25px rgba(114, 0, 227, 0.3),
+                        0 0 30px rgba(114, 0, 227, 0.2);
+                }
+
+                to {
+                    text-shadow:
+                        0 0 10px rgba(114, 0, 227, 1),
+                        0 0 20px rgba(114, 0, 227, 1),
+                        0 0 30px rgba(114, 0, 227, 1),
+                        0 0 40px rgba(114, 0, 227, 0.9),
+                }
+            }
+
         }
     }
 
